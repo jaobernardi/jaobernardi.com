@@ -1,0 +1,15 @@
+.error-container {
+    padding-top: 25vh;
+    margin-left: 10vw;
+}
+
+.error-container h1, .error-container pre {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.error-container pre {
+    font-size: 0.8rem;
+    font-style: italic;
+}
