@@ -1,16 +1,16 @@
-.error-container {
+.display-container {
     display: none;
     padding-top: 25vh;
     margin-left: 10vw;
 }
 
-.error-container h1, .error-container pre {
+.display-container h1, .display-container pre {
     margin: 0;
     border: 0;
     padding: 0;
 }
 
-.error-container pre {
+.display-container pre {
     font-size: 0.8rem;
     font-style: italic;
 }

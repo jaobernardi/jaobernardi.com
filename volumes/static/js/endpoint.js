@@ -10,13 +10,13 @@ const getHeaders = async (name, callback) => {
 }
 
 addEventListener("load", (event) => {
-    for (element of document.getElementsByClassName("error-container")[0].childNodes) {$(element).hide();}
+    for (element of document.getElementsByClassName("display-container")[0].childNodes) {$(element).hide();}
     
     getHeaders("X-Endpoint-Server", (endpoint) => {document.getElementById("endpoint").innerText = endpoint != null ? ': '+endpoint : '';});
     
     let i = 500;
-    $(document.getElementsByClassName("error-container")[0]).show();
-    for (element of document.getElementsByClassName("error-container")[0].childNodes) {
+    $(document.getElementsByClassName("display-container")[0]).show();
+    for (element of document.getElementsByClassName("display-container")[0].childNodes) {
         $(element).fadeIn(i);
         i += 350
     }
