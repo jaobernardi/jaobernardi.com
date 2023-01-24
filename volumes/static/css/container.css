@@ -1,5 +1,8 @@
-.display-container {
+.hidden {
     display: none;
+}
+
+.display-container {
     padding-top: 25vh;
     margin-left: 10vw;
 }
