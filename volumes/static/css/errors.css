@@ -1,4 +1,5 @@
 .error-container {
+    display: none;
     padding-top: 25vh;
     margin-left: 10vw;
 }

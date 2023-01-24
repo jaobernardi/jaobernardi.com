@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://static.jaobernardi.com/fonts.css">
-    <link rel="stylesheet" href="https://static.jaobernardi.com/utils.css">
-    <link rel="stylesheet" href="https://static.jaobernardi.com/errors.css">
+    <link rel="stylesheet" href="https://static.jaobernardi.com/css/fonts.css">
+    <link rel="stylesheet" href="https://static.jaobernardi.com/css/utils.css">
+    <link rel="stylesheet" href="https://static.jaobernardi.com/css/errors.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://static.jaobernardi.com/js/endpoint.js"></script>
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@jaobernard" />
@@ -14,7 +16,6 @@
     <meta property="og:url" content="https://jaobernardi.com" />
     <meta property="og:title" content="500 (internal server error)" />
     <meta property="og:description" content="Something went terribly wrong (pls send help)" />
-
     <title>jaobernardi.com | 500</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
         <h1>500</h1>
         <pre>(internal server error)</pre>
         <p>Something went terribly wrong <span class="emphasis-box">(pls send help)</span></p>
-        <sub>jaobernardi.com @ internal</sub>
+        <sub>jaobernardi.com @ internal <span id="endpoint"></span></sub>
     </div>
 </body>
 </html>

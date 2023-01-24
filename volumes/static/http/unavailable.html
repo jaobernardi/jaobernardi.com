@@ -4,40 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        * {
-            font-family: Rubik;
-            color: white;
-        }
-
-        body {
-            background-color: black;
-        }
-
-        .error-container {
-            padding-top: 25vh;
-            margin-left: 10vw;
-        }
-
-        .error-container h1, .error-container pre {
-            margin: 0;
-            border: 0;
-            padding: 0;
-        }
-
-        .error-container pre {
-            font-size: 0.8rem;
-            font-style: italic;
-        }
-
-        .emphasis-box {
-            font-family: Consolas;
-            font-style: italic;
-            font-size: 0.8rem;
-            vertical-align: middle;
-        }
-    </style>
+    <link rel="stylesheet" href="https://static.jaobernardi.com/css/fonts.css">
+    <link rel="stylesheet" href="https://static.jaobernardi.com/css/utils.css">
+    <link rel="stylesheet" href="https://static.jaobernardi.com/css/errors.css">
+    <script src="https://static.jaobernardi.com/js/endpoint.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@jaobernard" />
@@ -52,7 +23,7 @@
     <div class="error-container">
         <h1>Service Unavailable</h1>
         <p>It seems that someone pulled the plug on the server <span class="emphasis-box">(pls help I cant see where the plug is)</span></p>
-        <sub>jaobernardi.com @ 2023</sub>
+        <sub>jaobernardi.com @ internal <span id="endpoint"></span></sub>
     </div>
 </body>
 </html>

@@ -6,6 +6,7 @@
     },
     "source": {
         "domain": "jaobernardi.space",
-        "endpoint": "internal"
+        "endpoint": "internal",
+        "server": "api"
     }
 }
