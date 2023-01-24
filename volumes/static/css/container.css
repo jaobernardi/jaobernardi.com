@@ -15,8 +15,7 @@
 }
 
 .social a svg {
-    transition: height 1s;
-    transition: width 1s;
+    transition: all 1s!important;
     display: block;
     height: 0.8rem;
     width: 0.8rem;
@@ -24,8 +23,26 @@
 
 .social a svg:hover {
     display: block;
-    height: 1.4rem;
-    width: 1.4rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.instagram a svg:hover {
+    color: white!important;
+    border-radius: 1rem;
+    background-color: rgb(220, 16, 67)!important;
+}
+
+.twitter a svg:hover {
+    color: white!important;
+    border-radius: 1rem;
+    background-color: rgb(16, 128, 220)!important;
+}
+
+.github a svg:hover {
+    color: white!important;
+    border-radius: 1rem;
+    background-color: rgb(50, 50, 50)!important;
 }
 
 .hidden {
