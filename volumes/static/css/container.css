@@ -1,3 +1,6 @@
+.flex {
+    display: flex;
+}
 
 .social {
     vertical-align: middle;
