@@ -64,3 +64,12 @@
     font-size: 0.8rem;
     font-style: italic;
 }
+
+@media (prefers-color-scheme: dark) {
+    * {
+        color: white;
+    }
+    body {
+        background-color: black;
+    }
+}
