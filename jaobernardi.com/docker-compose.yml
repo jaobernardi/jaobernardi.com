@@ -1,15 +1,14 @@
 services:
   home:
-    container_name: "Homepage"
+    container_name: "main_landing_page"
     build: 
       context: './home/'
       dockerfile: 'Dockerfile'
     stop_signal: SIGKILL
-    networks:
-      default:
-        ipv4_address: 10.1.0.3
+
+
   nginx:
-    container_name: "Nginx"
+    container_name: "main_balancer"
     image: "nginx:latest"
     volumes: 
       - ../volumes/nginx/default.conf:/etc/nginx/conf.d/default.conf
@@ -17,25 +16,7 @@ services:
       - ../volumes/static/:/var/www/static/
     depends_on:
       - home
-      - minecraft
-    networks:
-      default:
-        ipv4_address: 10.1.0.4
-  minecraft:
-    container_name: 'Spigot_1.19.3'
-    image: openjdk:latest
-    command: bash -c "cd /minecraft/ && java -jar paper.jar"
-    volumes:
-      - ../volumes/jaocraft/:/minecraft/
-    expose:
-      - 8123:8123
-      - 25565:25565
-      - 8125:25564
-    networks:
-      default:
-        ipv4_address: 10.1.0.5
-  
-networks:
-  default:
-    external:
-      name: external-network
+    ports:
+      - 550:80
+    links:
+      - home
