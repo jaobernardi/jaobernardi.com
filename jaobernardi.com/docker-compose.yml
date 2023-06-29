@@ -14,9 +14,10 @@ services:
       - ../volumes/nginx/default.conf:/etc/nginx/conf.d/default.conf
       - ../volumes/nginx/snippets/:/etc/nginx/snippets/
       - ../volumes/static/:/var/www/static/
+      - ../../keys/:/etc/ssl/certs/
     depends_on:
       - home
     ports:
-      - 550:80
+      - 550:443
     links:
       - home
