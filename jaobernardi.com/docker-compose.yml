@@ -6,6 +6,12 @@ services:
       dockerfile: 'Dockerfile'
     stop_signal: SIGKILL
 
+  database:
+    image: 'mcr.microsoft.com/mssql/server'
+    env_file:
+      - envs/database.env
+    volumes:
+        - './drive:/var/opt/mssql/data'
 
   nginx:
     container_name: "main_balancer"
